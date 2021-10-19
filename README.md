@@ -73,6 +73,10 @@ ctrl + c
 
 [Express-Handlebars](https://www.npmjs.com/package/express-handlebars) - 模板引擎
 
+[Bootstrap](https://getbootstrap.com/)
+
+[Font-awesome](https://fontawesome.com/)
+
 # Contributor - 開發人員
 
 [Wendy Wu](https://github.com/wendy61019)
