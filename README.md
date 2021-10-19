@@ -57,7 +57,7 @@ cd restaurantList
 npm run insertSeeds
 
 ```
-當 Terminal 出現以下字樣，即表示種子資料已新增至資料庫，按下 ctrl + c 結束執行
+當 Terminal 出現以下字樣，即表示餐廳資料已新增至資料庫，按下 ctrl + c 結束執行
 
 ```
 
