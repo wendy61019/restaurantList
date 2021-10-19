@@ -50,43 +50,21 @@ cd restaurantList
 
 ```
 
-5. 產生預設使用者及餐廳資料至 MongoDB
+5. 若看見此行訊息則代表順利運行，打開瀏覽器進入到以下網址
 
 ```
 
-npm run insertSeeds
-
-```
-當 Terminal 出現以下字樣，即表示餐廳資料已新增至資料庫，按下 ctrl + c 結束執行
+Express is listening on localhost:3000
 
 ```
 
-Mongodb is connected!
-
-User and Restaurant data get done!
+6. 若欲暫停使用
 
 ```
 
-6. 啟動伺服器，執行 app.js 檔案
+ctrl + c
 
 ```
-
-nodemon app.js
-
-```
-
-7. 當 Terminal 出現以下字樣，表示伺服器與資料庫已啟動並成功連結
-
-```
-
-The Express server is running on http://localhost:3000
-
-Mongodb is connected!
-
-```
-
-現在，請至 [http://localhost:3000](http://localhost:3000) 開始使用程式！
-
 
 # Environment SetUp - 環境建置
 [Visual Studio Code](https://visualstudio.microsoft.com/zh-hant/) - 開發環境
