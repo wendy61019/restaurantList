@@ -1,6 +1,6 @@
 # 天天美食網
 
-一個以 Node.js 與 Express.js 打造的餐廳美食網站，提供使用者註冊個人帳號，可管理自己的餐廳清單，如新增、修改、刪除餐廳資料等功能。
+一個以 Node.js 與 Express.js 打造的餐廳美食網站，提供使用者註冊個人帳號，可管理自己的餐廳清單，如新增、修改、刪除餐廳資料等功能。同時，使用者也可以依照餐廳名稱與類別進行搜尋。
 
 # 專案畫面
 ![indexpage image](https://user-images.githubusercontent.com/92006997/137860357-2e88ccb9-dc8f-4ebc-83c2-16912d93cefa.png)
