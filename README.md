@@ -88,6 +88,8 @@ mongodb connected!
 
 ```
 
+8. 若欲暫停請按 ctrl + c
+
 # Environment SetUp - 環境建置
 [Visual Studio Code](https://visualstudio.microsoft.com/zh-hant/) - 開發環境
 
