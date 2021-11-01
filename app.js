@@ -113,9 +113,10 @@ app.post('/restaurants/:restaurant_id/edit', (req, res) => {
 //刪除餐廳
 app.delete('/restaurants/:restaurant_id', (req, res) => {
     const id = req.params.restaurant_id
-    return Restaurant.findByIdAndDelete(id)
+    return Restaurant.findById(id)
+    .then(restaurant => restaurant.remove())
     .then(() => res.redirect('/'))
-    .catch(err => console.log(err))
+    .catch(error => console.log(error))
 })
 
 app.listen(port, () => {
