@@ -21,9 +21,11 @@ deleteButtons.forEach(deleteButton => {
                 )
             }
         }).then(result => {
+            if (result) {
             axios.delete(`/restaurants/${id}`)
               .then(() => window.location.href ='/')
               .catch(error => console.log(error))
+            }
         })
     })
 })
