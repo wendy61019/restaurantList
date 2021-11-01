@@ -1,5 +1,4 @@
-//monitor for clicking delete button to pop-out certain window
-const deleteButtons = document.querySelectorAll(".delete-button")
+const deleteButtons = document.querySelectorAll('.delete-button')
 
 //monitor all delete buttons when clicked
 deleteButtons.forEach(deleteButton => {
@@ -11,15 +10,18 @@ deleteButtons.forEach(deleteButton => {
             icon: "warning",
             showCancelButton: true,
             confirmButtonColor: "#e85d04",
-            cancelButtonColor: "#fdfcdc",
             confirmButtonText: "確定刪除！",
-            cancelButtonText: "取消!"
+            cancelButtonText: "取消!",
+            closeOnConfirm: false
         }).then(result => {
             if(result.isConfirmed) {
-                return swal("資料已刪除！", "", "success")
+                swal("資料已刪除！",
+                "",
+                "success"
+                )
             }
         }).then(result => {
-            return axios.delete(`/restaurants/${id}`)
+            axios.delete(`/restaurants/${id}`)
               .then(() => window.location.href ='/')
               .catch(error => console.log(error))
         })
