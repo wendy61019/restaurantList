@@ -3,7 +3,6 @@ const exphbs = require('express-handlebars')
 const mongoose = require('mongoose')
 const methodOverride = require("method-override")
 const Restaurant = require('./models/Restaurant')
-const restaurant = require('./models/Restaurant')
 
 const app = express()
 const port = 3000
@@ -49,8 +48,8 @@ app.get('/search', (req, res) => {
     return Restaurant.find()
       .lean()
       .then(restaurants => {
-          const filterrestaurants = restaurants.filter(data => data.name.toLowerCase().includes(keyword) || data.category.includes(keyword))
-          res.render('index', { restaurants: filterrestaurants, keyword })
+          const filteredRestaurants = restaurants.filter(data => data.name.toLowerCase().includes(keyword) || data.category.includes(keyword))
+          res.render('index', { restaurants: filteredRestaurants, keyword })
       })
       .catch(err => console.log(err))
 })
