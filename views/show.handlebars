@@ -4,8 +4,9 @@
 <div class="container">
     <div class="row">
         <div class="mx-auto px-5">
-            <a class="btn btn-info px-4 mx-3" href="/restaurants/{{restaurant._id}}/edit">Edit</a>
             <a class="btn btn-success px-4 mx-3" href="/">Back</a>
+            <a class="btn btn-info px-4 mx-3" href="/restaurants/{{restaurant._id}}/edit">Edit</a>
+            <button class="delete-button btn btn-danger px-3 mx-3" type="button" data-id="{{this._id}}">Delete</button>
         </div>
     </div>
 </div>
