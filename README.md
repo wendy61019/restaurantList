@@ -3,9 +3,9 @@
 一個以 Node.js 與 Express.js 打造的餐廳美食網站，提供使用者註冊個人帳號，可管理自己的餐廳清單，如新增、修改、刪除餐廳資料等功能。同時，使用者也可以依照餐廳名稱與類別進行搜尋。
 
 # 專案畫面
-![restaurant CRUD function](https://user-images.githubusercontent.com/92006997/139583836-86a4d650-0c77-4d1c-b847-e5a2f20ef824.png)
+![index page sorting](https://user-images.githubusercontent.com/92006997/140313414-24930e79-42e0-49b6-8b06-5f0bed242ef4.png)
 
-![showpage CRUD function](https://user-images.githubusercontent.com/92006997/139583860-8860e3c6-c7a2-4a6d-9f7d-c4041e5f3413.png)
+![show page sorting](https://user-images.githubusercontent.com/92006997/140313458-65a89ad1-bcb1-485c-8db7-cd44e90dff36.png)
 
 # Features - 產品功能
 
