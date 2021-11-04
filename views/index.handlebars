@@ -12,6 +12,20 @@
                                 class="fas fa-search"></i></button>
                     </div>
                 </div>
+                <div class="input-group">
+                        <select class="form-control" id="sort" name="sort">
+                            {{#if sortOptions}}
+                            {{#each sortOptions}}
+                            <option value="{{this.value}}" {{#if this.isSelected}} selected {{/if}}>{{this.name}}</option>
+                            {{/each}}
+                            {{else}}
+                            <option value="asc" selected>A -> Z</option>
+                            <option value="desc">Z -> A</option>
+                            <option value="category">類別</option>
+                            <option value="location">地區</option>
+                            {{/if}}
+                        </select>
+                </div>
             </form>
         </div>
     </div>
