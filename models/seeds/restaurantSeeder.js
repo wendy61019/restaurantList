@@ -4,12 +4,17 @@ const restaurantList = require("../../restaurant.json")
 const db = require('../../config/mongoose')
 
 db.once("open", () => {
-    console.log("running restaurantSeeder script...")
+    restaurantList.results.forEach(data => {
+    const { 
+      name, category, image, location, 
+      phone, google_map, rating, description 
+    } = data
 
-    Restaurant.create(restaurantList)
-    .then(() => {
-        console.log("restaurantSeeder done!")
-        db.close()
+    Restaurant.create({
+      name, category, image, location,
+      phone, google_map, rating, description
     })
-    .catch(err => console.log(err))
+  })
+    
+  console.log('restaurantSeeder done!')
 })
