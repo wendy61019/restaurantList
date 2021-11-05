@@ -56,7 +56,7 @@ cd restaurantList
 
 在 Terminal 找到 restaurantSeeder.js 檔案
 
-執行 node models/seeder/restaurantSeeder.js 匯入使用者與餐廳資料
+執行 node models/seeds/restaurantSeeder.js 匯入使用者與餐廳資料
 
 ```
 
