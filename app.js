@@ -17,8 +17,6 @@ app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
 app.use(routes)
 
-//Set Routing Here
-
 app.listen(port, () => {
     console.log(`Express is listening on localhost:${port}`)
 })
