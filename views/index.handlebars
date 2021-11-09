@@ -54,13 +54,37 @@
             </div>
             <div class="card-footer text-muted">
               <div class="row justify-content-end px-1">
-                <a href="./restaurants/{{ this._id }}/edit" class="btn btn-outline-secondary mr-1">編輯</a>
-                <a href="./restaurants/{{ this._id }}" class="btn btn-outline-secondary mr-1">詳細</a>
-                <form action="./restaurants/{{ this._id }}?_method=DELETE" method="post">
-                  <button type="submit" class="btn btn-outline-danger">刪除</button>
+                <a href="./restaurants/{{ this._id }}/edit" class="btn btn-link mr-1">編輯</a>
+                <a href="./restaurants/{{ this._id }}" class="btn btn-link mr-1">詳細</a>
+                <form>
+                <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-danger px-3" data-toggle="modal" data-target="#trigger-deleteItem-{{restaurant._id}}">刪除</button>
                 </form>
               </div>
             </div>
+
+            <!-- Modal 優化使用者體驗，刪除餐廳-->
+            <div class="modal fade" id="trigger-deleteItem-{{restaurant._id}}" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-primary">刪除提醒</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                <div class="modal-body">
+                  <p class="font-weight-light">請問您確定要刪除資料嗎?</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary px-3 mb-3" data-dismiss="modal">關閉</button>
+                  <form action="/restaurants/{{restaurant._id}}/delete?_method=DELETE" method="POST">
+                    <button type="submit" class="btn btn-danger px-3 mx-3">刪除</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           </div>
         </a>
         {{/each}}
