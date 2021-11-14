@@ -99,6 +99,8 @@ mongodb connected!
 
 [MongoDB](https://www.mongodb.com/try/download/community) - 資料庫
 
+[Heroku](https://www.heroku.com/) - 網站部署
+
 [Bootstrap](https://getbootstrap.com/)
 
 [Font-awesome](https://fontawesome.com/)
